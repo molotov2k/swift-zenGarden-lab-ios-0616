@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R3N-lN-qCW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="YTY-qG-haR">
+            <objects>
+                <viewController id="R3N-lN-qCW" customClass="ViewController" customModule="ZenGarden" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SeA-7d-Q11"/>
+                        <viewControllerLayoutGuide type="bottom" id="f8H-gs-da0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ieI-2Q-d2f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shrub" translatesAutoresizingMaskIntoConstraints="NO" id="se6-0M-Ksu">
+                                <rect key="frame" x="20" y="249" width="155" height="61"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rake" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-wk-GDC">
+                                <rect key="frame" x="20" y="20" width="135" height="290"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swordinrock" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-iR-Cfr">
+                                <rect key="frame" x="20" y="129" width="170" height="84"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rock1" translatesAutoresizingMaskIntoConstraints="NO" id="3ZU-Rg-7RU">
+                                <rect key="frame" x="20" y="277" width="124" height="68"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="rakeOutlet" destination="Z7t-wk-GDC" id="XZw-Vf-NXT"/>
+                        <outlet property="rockOutlet" destination="3ZU-Rg-7RU" id="sOP-cm-vPY"/>
+                        <outlet property="shrubOutlet" destination="se6-0M-Ksu" id="DTp-8z-3ex"/>
+                        <outlet property="swordOutlet" destination="5ki-iR-Cfr" id="F7G-N9-mlQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRd-Nu-lJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="378"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rake" width="402" height="597"/>
+        <image name="rock1" width="297" height="234"/>
+        <image name="shrub" width="600" height="396"/>
+        <image name="swordinrock" width="498" height="600"/>
+    </resources>
+</document>
